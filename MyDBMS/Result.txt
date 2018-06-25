@@ -1,0 +1,85 @@
+
+show databases;
+系统当前没有数据库
+
+create database s;
+创建数据库成功
+
+use database s;
+正在使用数据库 s
+
+show tables;
+数据库 s 当前还没有表
+
+create table t(id int primary_key,name varchar,score double);
+创建表成功
+
+show tables;
+数据库 s 当前的所有表如下：
+t
+
+desc table t;
+字段名称	字段类型	字段属性
+id	int	primary_key	
+
+name	varchar	
+
+score	double	
+
+
+
+insert into t values(001,"张三",88);
+添加数据成功
+
+insert into t values(002,"李四",98);
+添加数据成功
+
+insert into t values(003,"王五",78);
+添加数据成功
+
+select * from t;
+001   "张三"   88   
+002   "李四"   98   
+003   "王五"   78   
+
+
+select name,score from t;
+"张三"   88   
+"李四"   98   
+"王五"   78   
+
+
+create table tt(id int primary_key,name varchar);
+创建表成功
+
+show tables;
+数据库 s 当前的所有表如下：
+t
+tt
+
+use table tt;
+正在使用表 tt
+
+alter table tt add column score double;
+添加字段成功
+
+desc table tt;
+字段名称	字段类型	字段属性
+id	int	primary_key	
+
+name	varchar	
+
+score	double	
+
+
+
+alter table tt drop column name;
+删除字段成功
+
+desc table tt;
+字段名称	字段类型	字段属性
+id	int	primary_key	
+
+score	double	
+
+

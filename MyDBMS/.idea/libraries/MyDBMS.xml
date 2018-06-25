@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MyDBMS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/MyDBMS_jar/MyDBMS.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
